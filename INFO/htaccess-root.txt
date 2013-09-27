@@ -1,0 +1,18 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteBase /
+
+# bhavan: remaining request goes to release2 or release3
+RewriteRule ^(.*)$ /release3/$1 [L]
+
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+
+</IfModule>
+
+# END WordPress

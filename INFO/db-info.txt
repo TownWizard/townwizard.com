@@ -1,0 +1,6 @@
+corp
+====
+
+DB name: townwiz_release3
+UN:	 townwiz_twwpres
+PW:	 tide_bama_2012!
