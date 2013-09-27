@@ -19,10 +19,12 @@
 define('DB_NAME', 'townwiz_release3');
 
 /** MySQL database username */
-define('DB_USER', 'townwiz_twwpres');
+/* define('DB_USER', 'townwiz_twwpres'); */
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'tide_bama_2012!');
+/* define('DB_PASSWORD', 'tide_bama_2012!'); */
+define('DB_PASSWORD', 'bitnami');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
