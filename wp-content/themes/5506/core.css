@@ -1544,6 +1544,174 @@ border:0;
 }
 
 
+/* New Features Page Styles */
+
+#Features .featuresPhone {
+  float: left;
+  margin-top: 32px;
+  position: relative;
+}
+
+#Features .featuresPhone .screen {
+position: absolute;
+top: 75px;
+left: 18px;
+width: 183px;
+height: 275px;
+}
+
+#Features .featuresPhone .caption {
+  width:220px;
+  font-size:11px;
+  text-align:center;
+  line-height:15px;
+}
+
+#Features .table {
+  margin-top:45px;
+  float:left;
+  width:660px;
+  margin-left:20px;
+  font-size:14px;
+}
+
+#Features .table p {
+  margin-top:26px;
+  width:500px;
+}
+
+.table th {
+  text-align:left;
+  text-transform:uppercase;
+}
+
+.table th span {
+  display:block;
+  border-bottom:1px solid #000;
+}
+
+.table th.sectionCol span {
+  width:110px;
+}
+
+.table th.descriptionCol span {
+  width:460px;
+}
+
+.table tr {
+  height:28px;
+}
+
+.table td span {
+  padding-right:3px;
+  color:#c9171b;
+}
+
+.table tr.space {
+  height:5px;
+}
+
+.table tr:hover td, 
+.table tr.sel td {
+  background-color:#ccc;
+  cursor:pointer;
+}
+
+.table tr:hover td.ico, 
+.table tr.sel td.ico {
+  background-color:#fff;
+}
+
+.table .iconCol {
+  width:40px;
+}
+
+.table td.ico span {
+  display:block;
+  height:30px;
+  width:33px;
+  background-image:url('/wp-content/themes/5506/images/2013/features/features-sprite.png');
+  background-repeat:no-repeat;
+}
+
+.table .splash td.ico span {
+  background-position:0 0;
+}
+
+.table .menu td.ico span {
+  background-position:0 -33px;
+}
+
+.table .news td.ico span {
+  background-position:0 -66px;
+}
+
+.table .events td.ico span {
+  background-position:0 -99px;
+}
+
+.table .restaurants td.ico span {
+  background-position:0 -132px;
+}
+
+.table .places td.ico span {
+  background-position:0 -165px;
+}
+
+.table .photos td.ico span {
+  background-position:0 -198px;
+}
+
+.table .videos td.ico span {
+  background-position:0 -231px;
+}
+
+.table .weather td.ico span {
+  background-position:0 -264px;
+}
+
+.table .sectionCol {
+  width:180px;
+}
+
+.table .descriptionCol {
+  width:460px;
+}
+
+#Lower {
+  margin-top:40px;
+}
+
+#Lower .sect {
+  float:left;
+  width:450px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+#Lower .sect .image {
+  background:0 none;
+  padding-right:10px;
+  margin-right:0;
+}
+
+#Lower .sect h3 {
+  margin-left: 14px;
+  font-size: 16px;
+  line-height:20px;
+  font-weight: bold;
+  color: #cc3333;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#Lower .sect ul li {
+  list-style:inside;
+  font-size:13px;
+  line-height:16px;
+}
+
+
 
 /* Lead Test Page Styles */
 

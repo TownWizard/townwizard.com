@@ -94,6 +94,23 @@ $(document).ready(function() {
 		}
 	}
 
+	var hovered = false;
+
+	if($('.featuresPhone').length) {
+	  if($('.table').length) {
+	    $('.table tr').hover(function() {
+	      hovered = true;
+	      var featureName = $(this).attr('class');
+	      if (featureName != "") {
+	        $('.featuresPhone .screen').css('background-image','url(/wp-content/themes/5506/images/2013/features/screen-' + featureName + '.jpg)');
+	      }
+	    }, function() {
+	      hovered = false;
+	      setTimeout(function() { if (!hovered) { $('.featuresPhone .screen').css('background-image','none'); } }, 750);
+	    });
+	  }
+	}
+
 });
 
 function trackConv(google_conversion_id,google_conversion_label) {
