@@ -1353,6 +1353,13 @@ span.wpcf7-not-valid-tip {
     line-height:20px;
 }
 
+.haveCoupon {
+	//font-weight: bold;
+	font-size: 12px;
+	float: right;
+	clear: both;
+}
+
 #Content #viewCartNav {
     border:0;
     text-align:right;

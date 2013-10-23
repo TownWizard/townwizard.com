@@ -406,20 +406,23 @@ if($cartImgPath) {
         <?php if(Cart66Session::get('Cart66Cart')->getNonSubscriptionAmount() > 0): ?>
         <td class="alignRight" colspan="2">
           <?php if($fullMode && Cart66Common::activePromotions()): ?>
-            <p class="haveCoupon" style="margin-bottom: 0px; font-weight: bold;"><?php _e( 'Code:' , 'cart66' ); ?></p>
-          <?php if(Cart66Session::get('Cart66PromotionErrors')):
+
+              <?php if(Cart66Session::get('Cart66PromotionErrors')):
                 $promoErrors = Cart66Session::get('Cart66PromotionErrors');
                     foreach($promoErrors as $type=>$error): ?>
                     <p class="promoMessage warning"><?php echo $error; ?></p>
               <?php endforeach;?>
               <?php Cart66Session::get('Cart66Cart')->clearPromotion();
                   endif; ?>
-            <div id="couponCode"><input type="text" name="couponCode" value="" /></div>
+            <div class="haveCoupon" ;"><?php _e( 'Code:' , 'cart66' ); ?>
+              <input type="text" name="couponCode" value="" />
+            </div>
+       
             <div id="updateCart">
               <?php if($cartImgPath && Cart66Common::urlIsLIve($applyCouponImg)): ?>
                 <input class="Cart66ApplyCouponButton" type="image" src="<?php echo $applyCouponImg ?>" value="<?php _e( 'Apply Coupon' , 'cart66' ); ?>" name="updateCart"/>
               <?php else: ?>
-                <input type="submit" name="updateCart" value="<?php _e( 'Submit' , 'cart66' ); ?>" class="Cart66ApplyCouponButton Cart66ButtonSecondary" />
+                <input type="submit" name="updateCart" value="<?php _e( 'Submit Code' , 'cart66' ); ?>" class="Cart66ApplyCouponButton Cart66ButtonSecondary" />
               <?php endif; ?>
             </div>
           <?php endif; ?>
