@@ -65,22 +65,22 @@
 
 #Cart66CheckoutReplacementText {
 	width: 50%;
-	margin: 10px auto;
-	font-weight: bold;
+	// bhavan - margin: 10px auto;
+	// bhavan - font-weight: bold;
 	}
 .Cart66TermsOfServiceWrapper {
-	width: 50%;
-	margin: 0 auto;
+	// bhavan - width: 50%;
+	// bhavan - margin: 0 auto;
 	border: 1px solid #cccccc;
 	background-color: #efefef;
 	}
 	.Cart66TermsOfServiceWrapper div {
-	margin: 10px;
+	// bhavan - margin: 10px;
 	}
 	.Cart66TermsOfServiceWrapper .Cart66AcceptTermsButton {
-	display: block;
+	// bhavan - display: block;
 	width: 200px;
-	margin: 20px auto;
+	// bhavan - margin: 20px auto;
 	}
 	.Cart66TermsTitle {
 		font-style: italic;
@@ -545,7 +545,7 @@ span.subscriptionOrMembership {
 .Cart66CartTOS{}
 .Cart66TermsOfServiceWrapper{
 	clear:both;
-	padding:10px 0px
+	// bhavan - padding:10px 0px
 }
 .Cart66TermsTitle{}
 .Cart66TermsText{}

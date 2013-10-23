@@ -1374,21 +1374,27 @@ span.wpcf7-not-valid-tip {
 }
 
 #Cart66CheckoutReplacementText {
-    background:#eee;
+    //background:#eee;
     width:auto !important;
     color: #000;
-    font-size: 15px;
-    line-height: 1.5em;
-    height: 1.5em;
-    margin-bottom: 5px;
+    //font-size: 15px;
+    font-size: 12px;
+    //line-height: 1.5em;
+    //height: 1.5em;
+    //margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top:0 !important;
-    border: 2px solid #f00;
-    padding:10px 20px;
-    text-align:center;
+    //border: 2px solid #f00;
+    border: 0px solid #f00;
+    //padding:10px 20px;
+    //text-align:center;
+    text-align: right;
+    margin-right: 10px;
 }
 
 #viewCartNav {
-    margin: 35px 0px 12px 0px;
+    //margin: 35px 0px 12px 0px;
+    margin: 15px 2px 2px 2px;
     border: 1px solid #CCCCCC;
     width: 100%;
     clear: both;
@@ -1399,7 +1405,10 @@ span.wpcf7-not-valid-tip {
     background:0 none !important;
     border:0 !important;
     text-align:center;
-    margin:15px auto;
+    //margin:15px auto;
+    //margin-right:15px;
+    padding: 0 10px 0 0 ;
+    //float: right;
 }
 
 .Cart66TermsTitle {
@@ -1444,6 +1453,7 @@ span.wpcf7-not-valid-tip {
     list-style:none;
 }
 
+
 .Cart66TermsOfServiceWrapper .Cart66AcceptTermsButton {
 	width:225px !important;
 	background: url('/wp-content/themes/5506/images/2012/red_bg.png') no-repeat left top;
@@ -1455,6 +1465,8 @@ text-transform: uppercase;
 color: #fff;
 display: block;
 border:0 !important;
+float: right;
+margin: 5px auto;
 }
 
 
