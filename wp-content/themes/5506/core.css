@@ -1784,3 +1784,36 @@ cursor:pointer;
 #leadtest #crmWebToEntityForm input[type=reset]:hover {
     background-position:left bottom;
 }
+
+/* ============= Steve's Styles ============= */
+
+#signupGrid{
+width:690px; height: 380px; position: relative;
+background: url(http://www.townwizarddev.com/wp-content/uploads/2013/10/signupBg.png) no-repeat;
+}
+#signupGrid .Cart66CartButton{
+position: absolute;top: 130px;
+}
+#signupGrid .Cart66CartButton input{
+background: #e0281c; width: 145px;padding: 10px 0; height: 40px; font-size: 18px; font-weight: bold;
+background: -moz-linear-gradient(top,  #e0281c 0%, #e0281c 50%, #c91700 50%, #c91700 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0281c), color-stop(50%,#e0281c), color-stop(50%,#c91700), color-stop(100%,#c91700));
+background: -webkit-linear-gradient(top,  #e0281c 0%,#e0281c 50%,#c91700 50%,#c91700 100%);
+background: -o-linear-gradient(top,  #e0281c 0%,#e0281c 50%,#c91700 50%,#c91700 100%);
+background: -ms-linear-gradient(top,  #e0281c 0%,#e0281c 50%,#c91700 50%,#c91700 100%);
+background: linear-gradient(to bottom,  #e0281c 0%,#e0281c 50%,#c91700 50%,#c91700 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0281c', endColorstr='#c91700',GradientType=0 );
+
+border: none;
+}
+#signupGrid #cartButtonForm_3{left: 14px;}
+#signupGrid #cartButtonForm_4{left: 186px;}
+#signupGrid #cartButtonForm_1{left: 358px;}
+#signupGrid #cartButtonForm_2{left: 531px;}
+
+.agreementLink{position: absolute; display: block; text-indent: -999em;width: 170px; height: 40px;}
+#liteAgreement{bottom: 14px;left: 0px;}
+#standardAgreement{bottom: 14px;left: 174px;}
+#proAgreement{bottom: 7px;left: 346px;}
+#corpAgreement{bottom: 14px;left: 520px;}
+#Content p.sigupNote{float: left; width: 570px;margin-left: 20px;font-size: 16px;font-weight: bold;}
