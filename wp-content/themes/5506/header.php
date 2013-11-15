@@ -116,6 +116,9 @@
 	wp_head();
 
 ?>
+
+<script src="//cdn.optimizely.com/js/331434433.js"></script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -160,8 +163,6 @@ $page = $page ? $page : 'default';
 			    <li><a href="/contact-us">Contact Us</a></li>
                             <li><a href="/team">Team</a></li>
 			    <li><a href="/press">Press</a></li>
-			    <li><a href="/professional-license-agreement">Professional Solution License</a></li>
-			    <li><a href="/business-license-agreement">Corporate Solution License</a></li>
                         </ul>
 		    </li>
                     <li><a class="partner" target="_blank" href="http://cs.townwizard.com"><span>Partner Login</span></a></li>
