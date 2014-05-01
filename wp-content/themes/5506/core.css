@@ -74,7 +74,7 @@ h4 {
 #MainHead h2 {
 	position:absolute;
 	top:34px;
-	right:360px;
+	right:420px;
 	font-size:30px;
 	line-height:30px;
 	color:#000;
@@ -337,11 +337,11 @@ h4 {
 
 #Content h2 {
     background:#ccc url('/wp-content/themes/5506/images/2012/header_grid_bg.jpg') repeat-x left top;
-    font-family:'HelveticaNeueW01-67MdCn 692710';
+   // font-family:'HelveticaNeueW01-67MdCn 692710';
     padding:21px 0 0 35px;
     height:57px;
     color:#000;
-    font-size:34px;
+    font-size:30px;
     line-height:34px;
     text-transform:uppercase;
     border-radius:5px 5px 0 0;
