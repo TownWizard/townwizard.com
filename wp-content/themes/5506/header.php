@@ -48,7 +48,7 @@
 
 
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/core.css" />
-<! bhavan
+<!-- bhavan
 <link href="https://fast.fonts.com/cssapi/42cf40d5-3ee9-4947-b52b-c78f6b86aed9.css" rel="stylesheet" type="text/css" />
 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
