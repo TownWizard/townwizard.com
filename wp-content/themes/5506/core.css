@@ -365,6 +365,10 @@ h4 {
     line-height:25px;
     margin-bottom:20px;
 }
+h4.contact {
+   margin-bottom:52px !important;
+}
+
 
 #Content .leftContent h5 {
     font-size:18px;
@@ -1328,8 +1332,18 @@ a.contactLink { cursor:pointer; }
     width:300px;
 }
 
+.box .wpcf7-validation-errors,
+.box .wpcf7-response-output {
+    position:absolute;
+    top:109px;
+    right:300px;
+    width:300px;
+font-size:12px;
+}
+
+
 .box .wpcf7 .wpcf7-response-output {
-    bottom:25px;
+   // bottom:25px;
 }
 
 span.wpcf7-not-valid-tip {

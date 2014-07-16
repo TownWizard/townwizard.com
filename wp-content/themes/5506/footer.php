@@ -14,10 +14,10 @@
 
             <footer class="box">
             	<span class="red">Follow us on:</span>
-                <a href="http://www.facebook.com/TownWizard" target="_blank"><img alt="Facebook" src="<?php bloginfo('template_url'); ?>/images/2012/footer/facebook_logo.jpg" /></a>
-                <a href="http://www.twitter.com/townwiz" target="_blank"><img alt="Twitter" src="<?php bloginfo('template_url'); ?>/images/2012/footer/twitter_logo.jpg" /></a>
-                <a href="http://www.linkedin.com/company/1592698?trk=tyah&trkInfo=tas%3Atownwizard%20llc" target="_blank"><img alt="Linked In" src="<?php bloginfo('template_url'); ?>/images/2012/footer/linkedin_logo.jpg" /></a>
-		<a href="http://www.youtube.com/channel/UCrwiyabEFIS0n0e87CB5nTg" target="_blank"><img alt="YouTube" src="<?php bloginfo('template_url'); ?>/images/2012/footer/youtube_logo.jpg" /></a>
+                <a href="https://www.facebook.com/TownWizard" target="_blank"><img alt="Facebook" src="<?php bloginfo('template_url'); ?>/images/2012/footer/facebook_logo.jpg" /></a>
+                <a href="https://www.twitter.com/townwiz" target="_blank"><img alt="Twitter" src="<?php bloginfo('template_url'); ?>/images/2012/footer/twitter_logo.jpg" /></a>
+                <a href="https://www.linkedin.com/company/1592698?trk=tyah&trkInfo=tas%3Atownwizard%20llc" target="_blank"><img alt="Linked In" src="<?php bloginfo('template_url'); ?>/images/2012/footer/linkedin_logo.jpg" /></a>
+		<a href="https://www.youtube.com/channel/UCrwiyabEFIS0n0e87CB5nTg" target="_blank"><img alt="YouTube" src="<?php bloginfo('template_url'); ?>/images/2012/footer/youtube_logo.jpg" /></a>
             </footer>
 	    <ul class="footLinks">
 		<li>&copy;<?php echo date('Y'); ?> TownWizard <span>All Rights Reserved</span></li>
@@ -27,7 +27,7 @@
 		<li><a href="/contact-us">Contact Us</a></li>
 		<li><a href="/careers">Careers</a></li>
 		<li><a href="/advertise">Advertise</a></li>
-		<li class="bbb"><a target="_blank" title="TownWizard LLC BBB Business Review" href="http://www.bbb.org/new-york-city/business-reviews/marketing-consultants-mobile/townwizard-llc-in-scarsdale-ny-137374/#bbbonlineclick"><img alt="TownWizard LLC BBB Business Review" style="border: 0;" src="http://seal-newyork.bbb.org/seals/black-seal-96-50-townwizard-llc-137374.png" /></a></li>
+		<li class="bbb"><a target="_blank" title="TownWizard LLC BBB Business Review" href="https://www.bbb.org/new-york-city/business-reviews/marketing-consultants-mobile/townwizard-llc-in-scarsdale-ny-137374/#bbbonlineclick"><img alt="TownWizard LLC BBB Business Review" style="border: 0;" src="https://seal-newyork.bbb.org/seals/black-seal-96-50-townwizard-llc-137374.png" /></a></li>
             </ul>
         </div>
     </div>
@@ -109,7 +109,7 @@ var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
 b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
 loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
 /* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('1818-206-10-2440');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1818-206-10-2440/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+olark.identify('1818-206-10-2440');/*]]>*/</script><noscript><a href="https://www.olark.com/site/1818-206-10-2440/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="https://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
 <!-- end olark code -->
 
 </body>

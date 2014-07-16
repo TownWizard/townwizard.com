@@ -167,7 +167,7 @@ $page = $page ? $page : 'default';
 			    <li><a href="/press">Press</a></li>
                         </ul>
 		    </li>
-                    <li><a class="partner" target="_blank" href="http://cs.townwizard.com"><span>Partner Login</span></a></li>
+                    <li><a class="partner" target="_blank" href="https://cs.townwizard.com"><span>Partner Login</span></a></li>
                 </ul>
             </nav>
         </header>
