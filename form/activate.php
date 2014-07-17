@@ -24,22 +24,51 @@ if (isset($_REQUEST['createguide'])) {
          
         $result = mysql_query($updateuser);
         // Send the email:
-        $twadminemail = $_REQUEST['email'];
+		$twadminemail = $_REQUEST['email'];
 
-	   $message = "Your new local guide is ready! Check out the site  link and login information below.<br/>\n\n";
-        $message.= "<b>Guide Name : </b>".$_REQUEST['gname']."<br/>";
-        $message.= "<b>Guide Administration URL : </b>http://".$_REQUEST['gname'].".townwizard.com/administrator<br/>";
-        $message.= "<b>Username : </b>".$_REQUEST['email']."<br/>";
-        $message.= "<b>Password : </b>".$_REQUEST['pass']."<br/>";
-        $message.= "Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/>***link to upgrade to paid account***<br/>Sincerely,<br/>The TownWizard Team";
-	  
+		$message = "Your new local guide is ready! Check out the site  link and login information below.<br/>\n\n";
+		$message.= "<table><tr><td><b>Guide Name : </b>".$_REQUEST['gname']."</td></tr>";
+		$message.= "<tr><td><b>Guide Administration URL : </b>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
+		$message.= "<tr><td><b>Username : </b>".$_REQUEST['email']."</td></tr>";
+		$message.= "<tr><td><b>Password : </b>".$_REQUEST['pass']."</td></tr></table>";
+		$message.= "Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/>***link to upgrade to paid account***<br/>Sincerely,<br/>The TownWizard Team";
+
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
 		$headers .= "From: no-reply@townwizard.com";
 
-        $finalmail = mail($twadminemail, 'Your TownWizard Local Guide is Ready!', $message,$headers);
+		$finalmail = mail($twadminemail, 'Your TownWizard Local Guide is Ready!', $message,$headers);
+		
+		$signupdate = gmdate("l jS \of F Y h:i:s A");
 
-        if($finalmail){
+		$message2 = "New local guide is ready! Check out the site  link and information below.<br/>\n\n";
+		$message2.= "<table><tr><td><b>Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
+		$message2.= "<tr><td><b>Email Address : </b></td><td>".$_REQUEST['email']."</td></tr>";
+		$message2.= "<tr><td><b>Guide Status : </b></td><td>Not Terminated</td></tr>";
+		$message2.= "<tr><td><b>Partners Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
+		$message2.= "<tr><td><b>Product : </b></td><td>Free</td></tr>";
+		$message2.= "<tr><td><b>Guide Deployment Status : </b></td><td>CMS Ready</td></tr>";
+		$message2.= "<tr><td><b>Subject : </b></td><td>New guide ".$_REQUEST['gname']."  is created.</td></tr>";
+		$message2.= "<tr><td><b>Guide Signup Date : </b></td><td>".$signupdate."</td></tr>";
+		$message2.= "<tr><td><b>Guide City Zip : </b></td><td>".$_REQUEST['zip']."</td></tr>";
+		$message2.= "<tr><td><b>Contact Name : </b></td><td>".$_REQUEST['gname']." - ".$_REQUEST['email']."</td></tr>";
+		$message2.= "<tr><td><b>Product Name : </b></td><td>Free - External Use</td></tr>";
+		$message2.= "<tr><td><b>Qty : </b></td><td>1</td></tr>";
+		$message2.= "<tr><td><b>Unit Price : </b></td><td>0</td></tr>";
+		$message2.= "<tr><td><b>List Price : </b></td><td>0</td></tr>";
+		$message2.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr></table>";
+
+		$headers2 = "MIME-Version: 1.0\r\n";
+		$headers2 .= "Content-type:text/html;charset=iso-8859-1\r\n";
+		$headers2 .= "From: no-reply@townwizard.com";
+		
+		$subject = "New guide ".$_REQUEST['gname']."  is created";
+		
+		$twadminemail2 = "operation@townwizard.com";
+
+		$finalmail2 = mail($twadminemail2, $subject, $message2,$headers2);
+
+        if($finalmail && $finalmail2){
 
             $_REQUEST[] = "";
             $serverurl = $_SERVER["HTTP_HOST"];
