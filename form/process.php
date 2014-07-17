@@ -103,7 +103,7 @@ function insertProcess($data){
 			if($result_insert_user){
 				// Send the email:
 				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/>\n\n";
-				$message .= "http://".$_SERVER[HTTP_HOST]."/form/activate.php?key=" .$activation;
+				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
@@ -160,7 +160,7 @@ function updateProcess($did){
 		if($result_insert_user){
 			// Send the email:
 				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/>\n\n";
-				$message .= "http://".$_SERVER[HTTP_HOST]."/form/activate.php?key=" .$activation;
+				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
