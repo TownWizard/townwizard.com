@@ -51,7 +51,7 @@ if (isset($_REQUEST['createguide'])) {
 		$message2.= "<tr><td><b>Subject : </b></td><td>New guide ".$_REQUEST['gname']."  is created.</td></tr>";
 		$message2.= "<tr><td><b>Guide Signup Date : </b></td><td>".$signupdate."</td></tr>";
 		$message2.= "<tr><td><b>Guide City Zip : </b></td><td>".$_REQUEST['zip']."</td></tr>";
-		$message2.= "<tr><td><b>Contact Name : </b></td><td>".$_REQUEST['gname']." - ".$_REQUEST['email']."</td></tr>";
+		$message2.= "<tr><td><b>Contact Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
 		$message2.= "<tr><td><b>Product Name : </b></td><td>Free - External Use</td></tr>";
 		$message2.= "<tr><td><b>Qty : </b></td><td>1</td></tr>";
 		$message2.= "<tr><td><b>Unit Price : </b></td><td>0</td></tr>";
