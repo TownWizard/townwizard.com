@@ -64,7 +64,7 @@ if (isset($_REQUEST['createguide'])) {
 		
 		$subject = "New guide ".$_REQUEST['gname']."  is created";
 		
-		$twadminemail2 = "operation@townwizard.com";
+		$twadminemail2 = "operations@townwizard.com";
 
 		$finalmail2 = mail($twadminemail2, $subject, $message2,$headers2);
 
