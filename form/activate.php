@@ -26,12 +26,12 @@ if (isset($_REQUEST['createguide'])) {
         // Send the email:
 		$twadminemail = $_REQUEST['email'];
 
-		$message = "Your new local guide is ready! Check out the site  link and login information below.<br/>\n\n";
-		$message.= "<table><tr><td><b>Guide Name : </b>".$_REQUEST['gname']."</td></tr>";
-		$message.= "<tr><td><b>Guide Administration URL : </b>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
-		$message.= "<tr><td><b>Username : </b>".$_REQUEST['email']."</td></tr>";
-		$message.= "<tr><td><b>Password : </b>".$_REQUEST['pass']."</td></tr></table>";
-		$message.= "Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/>***link to upgrade to paid account***<br/>Sincerely,<br/>The TownWizard Team";
+		$message = "<h3>Congratulations!</h3>Your new local guide is ready! Check out the site  link and login information below.<br/><br/>";
+		$message.= "<table cellspacing='5'><tr><td><b>Guide Name : </b></td><td>".$_REQUEST['gname']."</td></tr>";
+		$message.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
+		$message.= "<tr><td><b>Username : </b></td><td>".$_REQUEST['email']."</td></tr>";
+		$message.= "<tr><td><b>Password : </b></td><td>".$_REQUEST['pass']."</td></tr></table>";
+		$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
 
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
@@ -42,13 +42,13 @@ if (isset($_REQUEST['createguide'])) {
 		$signupdate = gmdate("l jS \of F Y h:i:s A");
 
 		$message2 = "New local guide is ready! Check out the site  link and information below.<br/>\n\n";
-		$message2.= "<table><tr><td><b>Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
+		$message2.= "<table cellspacing='5'><tr><td><b>Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
 		$message2.= "<tr><td><b>Email Address : </b></td><td>".$_REQUEST['email']."</td></tr>";
 		$message2.= "<tr><td><b>Guide Status : </b></td><td>Not Terminated</td></tr>";
 		$message2.= "<tr><td><b>Partners Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";
 		$message2.= "<tr><td><b>Product : </b></td><td>Free</td></tr>";
 		$message2.= "<tr><td><b>Guide Deployment Status : </b></td><td>CMS Ready</td></tr>";
-		$message2.= "<tr><td><b>Subject : </b></td><td>New guide ".$_REQUEST['gname']."  is created.</td></tr>";
+		$message2.= "<tr><td><b>Subject : </b></td><td> ".$_REQUEST['gname']."</td></tr>";
 		$message2.= "<tr><td><b>Guide Signup Date : </b></td><td>".$signupdate."</td></tr>";
 		$message2.= "<tr><td><b>Guide City Zip : </b></td><td>".$_REQUEST['zip']."</td></tr>";
 		$message2.= "<tr><td><b>Contact Name : </b></td><td>".$_REQUEST['fname']."</td></tr>";

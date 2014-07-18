@@ -102,8 +102,9 @@ function insertProcess($data){
 			//Successfully inserted into database
 			if($result_insert_user){
 				// Send the email:
-				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/>\n\n";
+				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
 				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
+				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
@@ -159,8 +160,9 @@ function updateProcess($did){
 		//Successfully inserted into database
 		if($result_insert_user){
 			// Send the email:
-				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/>\n\n";
+				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
 				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
+				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
