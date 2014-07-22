@@ -30,7 +30,7 @@ if (isset($_REQUEST['createguide'])) {
 		$message.= "<table cellspacing='5'><tr><td><b>Guide Name : </b></td><td>".$_REQUEST['gname']."</td></tr>";
 		$message.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
 		$message.= "<tr><td><b>Username : </b></td><td>".$_REQUEST['email']."</td></tr>";
-		$message.= "<tr><td><b>Password : </b></td><td>".$_REQUEST['pass']."</td></tr></table>";
+		$message.= "<tr><td><b>Password : </b></td><td>Password that you specified.</td></tr></table>";
 		$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
 
 		$headers = "MIME-Version: 1.0\r\n";
