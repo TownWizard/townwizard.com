@@ -104,11 +104,11 @@ function insertProcess($data){
 				// Send the email:
 				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
 				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
-				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
+				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
-				$headers .= "From: no-reply@townwizard.com";
+				$headers .= "From:TownWizard< no-reply@townwizard.com>";
 				
 				$insertmail = mail($data['email'], 'TownWizard Signup Email Verification', $message, $headers);
 				if($insertmail){
@@ -162,11 +162,11 @@ function updateProcess($did){
 			// Send the email:
 				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
 				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
-				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
+				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
-				$headers .= "From: no-reply@townwizard.com";
+				$headers .= "From:TownWizard< no-reply@townwizard.com>";
 				
 			$updatemail = mail($email, 'TownWizard Signup Email Verification', $message, $headers);
 			if($updatemail){

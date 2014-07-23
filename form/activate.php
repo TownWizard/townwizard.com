@@ -30,12 +30,12 @@ if (isset($_REQUEST['createguide'])) {
 		$message.= "<table cellspacing='5'><tr><td><b>Guide Name : </b></td><td>".$_REQUEST['gname']."</td></tr>";
 		$message.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
 		$message.= "<tr><td><b>Username : </b></td><td>".$_REQUEST['email']."</td></tr>";
-		$message.= "<tr><td><b>Password : </b></td><td>Password that you specified.</td></tr></table>";
-		$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team.";
+		$message.= "<tr><td><b>Password : </b></td><td>(password that you specified)</td></tr></table>";
+		$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
 
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
-		$headers .= "From: no-reply@townwizard.com";
+		$headers .= "From:TownWizard< no-reply@townwizard.com>";
 
 		$finalmail = mail($twadminemail, 'Your TownWizard Local Guide is Ready!', $message,$headers);
 		
@@ -56,11 +56,15 @@ if (isset($_REQUEST['createguide'])) {
 		$message2.= "<tr><td><b>Qty : </b></td><td>1</td></tr>";
 		$message2.= "<tr><td><b>Unit Price : </b></td><td>0</td></tr>";
 		$message2.= "<tr><td><b>List Price : </b></td><td>0</td></tr>";
+		$message2.= "<tr><td><b>Language : </b></td><td>".$_REQUEST['language']."</td></tr>";
+		$message2.= "<tr><td><b>Distance : </b></td><td>".$_REQUEST['distance']."</td></tr>";
+		$message2.= "<tr><td><b>Time Zone : </b></td><td>".$_REQUEST['time_zone']."</td></tr>";
+		$message2.= "<tr><td><b>Date Format : </b></td><td>".$_REQUEST['date_format']."</td></tr>";
 		$message2.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr></table>";
 
 		$headers2 = "MIME-Version: 1.0\r\n";
 		$headers2 .= "Content-type:text/html;charset=iso-8859-1\r\n";
-		$headers2 .= "From: no-reply@townwizard.com";
+		$headers2 .= "From:TownWizard< no-reply@townwizard.com>";
 		
 		$subject = "New guide ".$_REQUEST['gname']."  is created";
 		
