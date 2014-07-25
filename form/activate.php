@@ -28,11 +28,12 @@ if (isset($_REQUEST['createguide'])) {
         // Send the email:
 		$twadminemail = $_REQUEST['email'];
 		
-		$headercode = mailheader();
+		$var1 = "GUIDE INFORMATION";
+		$headercode = mailheader($var1);
 		$footercode = mailfooter();
 
 		$message .= $headercode; 
-		$message .= '<tr><td>&nbsp;</td><td><p style="font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;">Congratulations</p><p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Your new local guide is ready! Check out the site  link and login information below.</p></td><td>&nbsp;</td></tr>';
+		$message .= '<tr><td>&nbsp;</td><td><p style="font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;">Congratulations!</p><p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Your new local guide is ready! Check out the site  link and login information below.</p></td><td>&nbsp;</td></tr>';
 		$message .= '<tr><td height="100">&nbsp;</td>
 						<td> 
 							<table cellspacing="5"><tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;" width="160" >Guide Name : </td><td>'.$_REQUEST['gname'].'</td></tr>
