@@ -1,6 +1,7 @@
 <?php
 
 session_start(); 
+include "emailtemplate.php";
 
 if (!empty($_REQUEST['captcha'])) {
 	
@@ -101,10 +102,22 @@ function insertProcess($data){
 
 			//Successfully inserted into database
 			if($result_insert_user){
-				// Send the email:
-				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
-				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
-				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
+				
+				$headercode = mailheader();
+				$footercode = mailfooter();
+				$link = "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
+
+				$message .= $headercode;
+				$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td height="100">&nbsp;</td><td> 
+									<p class="gray">Link:</p>
+									<a class="black" target="_blank" href='.$link.' >'.$link.'</a>
+								</td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td height="150">&nbsp;</td><td> 
+									<p class="gray">Sincerely,</p>
+									<p class="gray">The TownWizard Team</p>
+								</td><td>&nbsp;</td></tr>';								
+				$message .= $footercode;
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
@@ -159,10 +172,22 @@ function updateProcess($did){
 			
 		//Successfully inserted into database
 		if($result_insert_user){
-			// Send the email:
-				$message = "<h3>Congratulations and thanks for signing up for your free local guide from TownWizard!</h3>Click the email verification link below to complete the guide setup process.<br/><br/>";
-				$message .= "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
-				$message .= "<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
+			
+				$headercode = mailheader();
+				$footercode = mailfooter();
+				$link = "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
+
+				$message .= $headercode;
+				$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td height="100">&nbsp;</td><td> 
+									<p class="gray">Link:</p>
+									<a class="black" target="_blank" href='.$link.' >'.$link.'</a>
+								</td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td height="150">&nbsp;</td><td> 
+									<p class="gray">Sincerely,</p>
+									<p class="gray">The TownWizard Team</p>
+								</td><td>&nbsp;</td></tr>';								
+				$message .= $footercode;
 				
 				$headers = "MIME-Version: 1.0\r\n";
 				$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";

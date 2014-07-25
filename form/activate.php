@@ -1,5 +1,7 @@
 <?php
 
+include "emailtemplate.php";
+
 $con = mysql_pconnect("localhost","root","bitnami");
 if (!$con){die('Could not connect: ' . mysql_error($con));}
 $dblink = mysql_select_db("master");
@@ -25,13 +27,40 @@ if (isset($_REQUEST['createguide'])) {
         $result = mysql_query($updateuser);
         // Send the email:
 		$twadminemail = $_REQUEST['email'];
+		
+		$headercode = mailheader();
+		$footercode = mailfooter();
 
-		$message = "<h3>Congratulations!</h3>Your new local guide is ready! Check out the site  link and login information below.<br/><br/>";
-		$message.= "<table cellspacing='5'><tr><td><b>Guide Name : </b></td><td>".$_REQUEST['gname']."</td></tr>";
-		$message.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
-		$message.= "<tr><td><b>Username : </b></td><td>".$_REQUEST['email']."</td></tr>";
-		$message.= "<tr><td><b>Password : </b></td><td>(password that you specified)</td></tr></table>";
-		$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
+		$message .= $headercode;
+		$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Your new local guide is ready! Check out the site  link and login information below.</p></td><td>&nbsp;</td></tr>';
+		$message .= '<tr><td height="100">&nbsp;</td>
+						<td> 
+							<table cellspacing="5"><tr><td class="gray">Guide Name : </td><td>'.$_REQUEST['gname'].'</td></tr>";
+							<tr><td class="gray">Guide Administration URL : </td><td>http://'.$_REQUEST['gname'].'.townwizard.com/administrator</td></tr>";
+							<tr><td class="gray">Username : </td><td>'.$_REQUEST['email'].'</td></tr>";
+							<tr><td class="gray">Password : </td><td>(password that you specified)</td></tr></table>
+						</td>
+						<td>&nbsp;</td></tr>';
+		$message .= '	<tr>
+							<td height="150">&nbsp;</td>
+							<td>
+								<p class="smallblack">We are here to help.</p>
+								<p class="gray">Be sure to check out these helpful links to help you get started:</p> <a class="black" href="#" target="_blank">***knowledge base link***</a>
+							</td>
+							<td>&nbsp;</td>
+						</tr>';
+		$message .= '<tr><td height="150">&nbsp;</td><td> 
+							<p class="gray">Sincerely,</p>
+							<p class="gray">The TownWizard Team</p>
+						</td><td>&nbsp;</td></tr>';						
+		$message .= $footercode;
+
+	//	$message = "<h3>Congratulations!</h3>Your new local guide is ready! Check out the site  link and login information below.<br/><br/>";
+	//	$message.= "<table cellspacing='5'><tr><td><b>Guide Name : </b></td><td>".$_REQUEST['gname']."</td></tr>";
+	//	$message.= "<tr><td><b>Guide Administration URL : </b></td><td>http://".$_REQUEST['gname'].".townwizard.com/administrator</td></tr>";
+	//	$message.= "<tr><td><b>Username : </b></td><td>".$_REQUEST['email']."</td></tr>";
+	//	$message.= "<tr><td><b>Password : </b></td><td>(password that you specified)</td></tr></table>";
+	//	$message.= "<br/><br/>Also, be sure to check out these helpful links to help you get started:<br/>***knowledge base link***<br/><br/>Sincerely,<br/><br/>The TownWizard Team";
 
 		$headers = "MIME-Version: 1.0\r\n";
 		$headers .= "Content-type:text/html;charset=iso-8859-1\r\n";
