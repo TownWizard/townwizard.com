@@ -1,5 +1,5 @@
 <?php
-function mailheader(){
+function mailheader(){ 
 	$headercode = '
 							<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5"><tbody>
 								<tr>
