@@ -36,8 +36,8 @@ if (isset($_REQUEST['createguide'])) {
 		$message .= '<tr><td height="100">&nbsp;</td>
 						<td> 
 							<table cellspacing="5"><tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Guide Name : </td><td>'.$_REQUEST['gname'].'</td></tr>
-							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Guide Administration URL : </td><td>http://'.$_REQUEST['gname'].'.townwizard.com/administrator</td></tr>
-							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Username : </td><td>'.$_REQUEST['email'].'</td></tr>
+							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Guide Administration URL : </td><td><a style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;" href="http://'.$_REQUEST['gname'].'.townwizard.com/administrator" target="_blank">http://'.$_REQUEST['gname'].'.townwizard.com/administrator</a></td></tr>
+							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Username : </td><td><a style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;" href="mailto:'.$_REQUEST['email'].'" >'.$_REQUEST['email'].'</a></td></tr>
 							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Password : </td><td>(password that you specified)</td></tr></table>
 						</td>
 						<td>&nbsp;</td></tr>';
@@ -49,7 +49,7 @@ if (isset($_REQUEST['createguide'])) {
 							</td>
 							<td>&nbsp;</td>
 						</tr>';
-		$message .= '<tr><td height="150">&nbsp;</td><td> 
+		$message .= '<tr><td height="100">&nbsp;</td><td> 
 							<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Sincerely,</p>
 							<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">The TownWizard Team</p>
 						</td><td>&nbsp;</td></tr>';						

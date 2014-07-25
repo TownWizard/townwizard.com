@@ -4,14 +4,14 @@ function mailheader(){
 							<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5"><tbody>
 								<tr>
 									<td>
-										<table width="500" border="0" align="center" cellpadding="0" cellspacing="0"><tbody>
+										<table width="550" border="0" align="center" cellpadding="0" cellspacing="0"><tbody>
 											<tr>
 												<td width="161"><a href="http://www.townwizard.com" target="_blank"><img src="http://www.townwizard.com/wp-content/themes/5506/images/2012/header/townwizard_logo.png" alt="townwizard" width="262" height="84" border="0"></a></td>
 												<td width="338" align="right"><p style="font:9px Helvetica Neue,Helvetica,Arial,sans-serif;letter-spacing:3px;margin:0;padding:0"><span style="color:#1a1a1a">GUIDE INFORMATION</span></p></td>
 											</tr>
 											<tr>
 												<td height="50" colspan="2" >
-													<table width="500" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="border:1px double #e3e3e3;padding:0;margin:0"><tbody>
+													<table width="550" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="border:1px double #e3e3e3;padding:0;margin:0"><tbody>
 														<tr>
 															<td width="40">&nbsp;</td>
 															<td width="420" height="50"></td>
@@ -22,11 +22,6 @@ function mailheader(){
 
 function mailfooter(){
 	$footercode = '
-						<tr>
-							<td>&nbsp;</td>
-							<td height="50"></td>
-							<td>&nbsp;</td>
-						</tr>
 						</tbody></table>
 						</td>
 					</tr>
