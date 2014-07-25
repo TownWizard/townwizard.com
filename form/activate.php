@@ -32,26 +32,26 @@ if (isset($_REQUEST['createguide'])) {
 		$footercode = mailfooter();
 
 		$message .= $headercode;
-		$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Your new local guide is ready! Check out the site  link and login information below.</p></td><td>&nbsp;</td></tr>';
+		$message .= '<tr><td>&nbsp;</td><td><p style="font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;">Congratulations</p><p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Your new local guide is ready! Check out the site  link and login information below.</p></td><td>&nbsp;</td></tr>';
 		$message .= '<tr><td height="100">&nbsp;</td>
 						<td> 
-							<table cellspacing="5"><tr><td class="gray">Guide Name : </td><td>'.$_REQUEST['gname'].'</td></tr>";
-							<tr><td class="gray">Guide Administration URL : </td><td>http://'.$_REQUEST['gname'].'.townwizard.com/administrator</td></tr>";
-							<tr><td class="gray">Username : </td><td>'.$_REQUEST['email'].'</td></tr>";
-							<tr><td class="gray">Password : </td><td>(password that you specified)</td></tr></table>
+							<table cellspacing="5"><tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Guide Name : </td><td>'.$_REQUEST['gname'].'</td></tr>
+							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Guide Administration URL : </td><td>http://'.$_REQUEST['gname'].'.townwizard.com/administrator</td></tr>
+							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Username : </td><td>'.$_REQUEST['email'].'</td></tr>
+							<tr><td style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Password : </td><td>(password that you specified)</td></tr></table>
 						</td>
 						<td>&nbsp;</td></tr>';
 		$message .= '	<tr>
 							<td height="150">&nbsp;</td>
 							<td>
-								<p class="smallblack">We are here to help.</p>
-								<p class="gray">Be sure to check out these helpful links to help you get started:</p> <a class="black" href="#" target="_blank">***knowledge base link***</a>
+								<p style="font:15px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:10px 0 10px 0;padding:10px 0 0 0;color:#000000;">We are here to help.</p>
+								<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Be sure to check out these helpful links to help you get started:</p> <a style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;" href="#" target="_blank">***knowledge base link***</a>
 							</td>
 							<td>&nbsp;</td>
 						</tr>';
 		$message .= '<tr><td height="150">&nbsp;</td><td> 
-							<p class="gray">Sincerely,</p>
-							<p class="gray">The TownWizard Team</p>
+							<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Sincerely,</p>
+							<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">The TownWizard Team</p>
 						</td><td>&nbsp;</td></tr>';						
 		$message .= $footercode;
 

@@ -108,14 +108,14 @@ function insertProcess($data){
 				$link = "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
 
 				$message .= $headercode;
-				$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td>&nbsp;</td><td><p style="font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;">Congratulations</p><p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
 				$message .= '<tr><td height="100">&nbsp;</td><td> 
-									<p class="gray">Link:</p>
-									<a class="black" target="_blank" href='.$link.' >'.$link.'</a>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Link:</p>
+									<a style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;" target="_blank" href='.$link.' >'.$link.'</a>
 								</td><td>&nbsp;</td></tr>';
 				$message .= '<tr><td height="150">&nbsp;</td><td> 
-									<p class="gray">Sincerely,</p>
-									<p class="gray">The TownWizard Team</p>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Sincerely,</p>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">The TownWizard Team</p>
 								</td><td>&nbsp;</td></tr>';								
 				$message .= $footercode;
 				
@@ -178,14 +178,14 @@ function updateProcess($did){
 				$link = "http://".$_SERVER[HTTP_HOST]."/free-next?key=" .$activation;
 
 				$message .= $headercode;
-				$message .= '<tr><td>&nbsp;</td><td><p class="title">Congratulations</p><p class="gray">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
+				$message .= '<tr><td>&nbsp;</td><td><p style="font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;">Congratulations</p><p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Thanks for signing up for your free local guide from TownWizard! Click the email verification link below to complete the guide setup process.</p></td><td>&nbsp;</td></tr>';
 				$message .= '<tr><td height="100">&nbsp;</td><td> 
-									<p class="gray">Link:</p>
-									<a class="black" target="_blank" href='.$link.' >'.$link.'</a>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Link:</p>
+									<a style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;" target="_blank" href='.$link.' >'.$link.'</a>
 								</td><td>&nbsp;</td></tr>';
 				$message .= '<tr><td height="150">&nbsp;</td><td> 
-									<p class="gray">Sincerely,</p>
-									<p class="gray">The TownWizard Team</p>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">Sincerely,</p>
+									<p style="font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;">The TownWizard Team</p>
 								</td><td>&nbsp;</td></tr>';								
 				$message .= $footercode;
 				

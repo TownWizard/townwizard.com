@@ -1,21 +1,6 @@
 <?php
 function mailheader(){
-	$headercode = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-						<html>
-						<head>
-							<title></title>
-							<meta name="" content="">
-							<style>
-								*{margin:0px;padding:0px}
-								.gray{font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#777777;margin:20px 0 5px 0;padding:0;}
-								.black, a{font:14px Helvetica Neue,Helvetica,Arial,sans-serif;color:#1a1a1a;text-decoration:none;}
-								.title{font:22px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:0px 0 0 0;padding:0;color:#000;}
-								.smallblack{font:15px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:10px 0 10px 0;padding:10px 0 0 0;color:#000000;}
-								.smallgray{font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none}
-							</style>
-						</head>
-						<body>
-
+	$headercode = '
 							<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f5f5"><tbody>
 								<tr>
 									<td>
@@ -49,18 +34,18 @@ function mailfooter(){
 						<td height="10" align="center" valign="middle"  colspan="2" ></td>
 					</tr>
 					<tr>
-						<td align="center" valign="middle" colspan="2"><p class="smallblack">OUR ADDRESS & SOCIAL MEDIA DETAILS</p></td>
+						<td align="center" valign="middle" colspan="2"><p style="font:15px Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:bold;margin:10px 0 10px 0;padding:10px 0 0 0;color:#000000;">OUR ADDRESS & SOCIAL MEDIA DETAILS</p></td>
 
 					</tr>
 					<tr>
 						<td align="center" valign="middle" colspan="2" style="border-top:1px solid #e3e3e3">&nbsp;</td>
 					</tr>
 					<tr>
-						<td height="20" align="center" colspan="2"><p class="smallgray">2, Overhill Road, Suite 400, Scarsdale, NY 10583 , 10013, USA</p></td>
+						<td height="20" align="center" colspan="2"><p style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none">2, Overhill Road, Suite 400, Scarsdale, NY 10583 , 10013, USA</p></td>
 					</tr>
 					<tr>
 						<td height="20" align="center" colspan="2">
-						<p class="smallgray"><a class="smallgray" href="http://www.facebook.com/TownWizard"  target="_blank">Facebook &bull; </a><a class="smallgray" href="http://www.twitter.com/townwiz"  target="_blank">Twitter &bull; </a><a class="smallgray" href="http://www.linkedin.com/company/1592698?trk=tyah&amp;trkInfo=tas%3Atownwizard%20llc"  target="_blank">LinkedIn &bull; </a><a class="smallgray" href="http://www.youtube.com/channel/UCrwiyabEFIS0n0e87CB5nTg"  target="_blank">YouTube</a>
+						<p style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none"><a style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none" href="http://www.facebook.com/TownWizard"  target="_blank">Facebook &bull; </a><a style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none" href="http://www.twitter.com/townwiz"  target="_blank">Twitter &bull; </a><a style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none" href="http://www.linkedin.com/company/1592698?trk=tyah&amp;trkInfo=tas%3Atownwizard%20llc"  target="_blank">LinkedIn &bull; </a><a style="font:12px Helvetica Neue,Helvetica,Arial,sans-serif;margin:0;padding:0;color:#777777;text-decoration:none" href="http://www.youtube.com/channel/UCrwiyabEFIS0n0e87CB5nTg"  target="_blank">YouTube</a>
 						</p>
 						</td>
 					</tr>
@@ -69,9 +54,7 @@ function mailfooter(){
 					</tr>
 		</tbody></table></td>
 		</tr>
-	</tbody></table>
-</body>
-</html>';
+	</tbody></table>';
 	return  $footercode;
 }
 
